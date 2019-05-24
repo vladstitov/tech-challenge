@@ -1,0 +1,12 @@
+<div>
+    <app-select-album></app-select-album>
+
+    <div>
+        <h5>Images</h5>
+        <div>
+            <mat-card *ngFor="let image of (images$ | async)">
+                <img src="{{image.url}}" >
+            </mat-card>
+        </div>
+    </div>
+</div>
